@@ -29,7 +29,7 @@ const projects = [
   {
     id: 4,
     title: "FAS | Forum Aspirasi Siswa",
-    // desc: "Platform for report your aspiration",
+    desc: "Platform for report your aspiration",
     date: "Jan 2026",
     image: "/projects/fas.png",
     github: "https://github.com/hengkaralaurenchia/aspiration-app"
@@ -40,6 +40,7 @@ const projects = [
     desc: "Public Complaint System",
     date: "Apr 2026",
     image: "/projects/silapor.png",
+    github: "#"
   },
   {
     id: 6,
@@ -63,6 +64,7 @@ const projects = [
     desc: "Travel UI Design",
     date: "Jan 2026",
     image: "/projects/travee.png",
+    github: "#"
   },
   {
     id: 9,
@@ -70,11 +72,18 @@ const projects = [
     desc: "UI Design",
     date: "Jan 2026",
     image: "/projects/ecopine.png",
+    github: "#"
   },
 ];
 
 export default function CardComp() {
   const [selectedImage, setSelectedImage] = useState(null);
+
+  const openGithub = (url) => {
+    if (url && url !== "#") {
+      window.open(url, "_blank");
+    }
+  };
 
   return (
     <>
@@ -84,7 +93,6 @@ export default function CardComp() {
             key={project.id}
             className="w-full overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition-all duration-300"
           >
-            {/* IMAGE */}
             <img
               src={project.image}
               alt={project.title}
@@ -106,12 +114,18 @@ export default function CardComp() {
               </span>
 
               <div className="flex gap-2 pt-2">
-                <button className="flex-1 text-[10px] bg-black text-white py-1 rounded-md">
+                <button 
+                  onClick={() => alert("Live demo coming soon!")}
+                  className="flex-1 text-[10px] bg-black text-white py-1 rounded-md hover:bg-[#779776] transition"
+                >
                   Live Demo
                 </button>
 
-                <button className="flex-1 text-[10px] border border-gray-400 py-1 rounded-md">
-                  {project.github}
+                <button 
+                  onClick={() => openGithub(project.github)}
+                  className="flex-1 text-[10px] border border-gray-400 py-1 rounded-md hover:bg-gray-100 transition"
+                >
+                  GitHub
                 </button>
               </div>
             </div>
@@ -119,7 +133,6 @@ export default function CardComp() {
         ))}
       </div>
 
-      {/* POPUP IMAGE */}
       {selectedImage && (
         <div
           onClick={() => setSelectedImage(null)}
