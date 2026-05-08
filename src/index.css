@@ -3,6 +3,14 @@
 @source "../.flowbite-react/class-list.json";
 
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  padding-top: 70px;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
