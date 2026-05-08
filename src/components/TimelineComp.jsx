@@ -12,10 +12,10 @@ import { HiArrowNarrowRight, HiDownload } from "react-icons/hi";
 
 export default function TimelineComp() {
     const handleDownload = () => {
-        const pdfUrl = "/resume.pdf";
+        const pdfUrl = "/CV-Hengkara Laurenchia Darmawan.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "Hengkara_Resume.pdf"; // Nama file saat didownload
+        link.download = "CV-Hengkara Laurenchia Darmawan.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
