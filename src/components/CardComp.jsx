@@ -8,6 +8,7 @@ const projects = [
     desc: "Website Donasi Digital",
     date: "Jan 2026",
     image: "/projects/kitabisa.png",
+    github: "https://github.com/hengkaralaurenchia/donasi-app"
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const projects = [
     desc: "Modern online store",
     date: "Feb 2026",
     image: "/projects/makeup.png",
+    github: "https://github.com/hengkaralaurenchia/makeupstore-app"
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const projects = [
     desc: "Modern school website",
     date: "Mar 2025",
     image: "/projects/web-wk.png",
+    github: "https://github.com/RPL-Wikrama-Bogor/wikrama-web"
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ const projects = [
     // desc: "Platform for report your aspiration",
     date: "Jan 2026",
     image: "/projects/fas.png",
+    github: "https://github.com/hengkaralaurenchia/aspiration-app"
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const projects = [
     desc: "E-Learning App",
     date: "Apr 2026",
     image: "/projects/educora.png",
+    github: "https://github.com/hengkaralaurenchia/e-learning-app"
   },
   {
     id: 7,
@@ -50,6 +55,7 @@ const projects = [
     desc: "Booking Courts App",
     date: "Apr 2026",
     image: "/projects/court.png",
+    github: "https://github.com/hengkaralaurenchia/booking-courts-app"
   },
   {
     id: 8,
@@ -105,7 +111,7 @@ export default function CardComp() {
                 </button>
 
                 <button className="flex-1 text-[10px] border border-gray-400 py-1 rounded-md">
-                  GitHub
+                  {project.github}
                 </button>
               </div>
             </div>
