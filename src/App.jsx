@@ -50,7 +50,7 @@ function App() {
     }`}>
       <NavbarComp />
       <div
-        className="min-h-screen flex items-start pt-20"
+        className="min-h-screen flex items-start"
         style={{
           backgroundImage: `linear-gradient(to right, #e5e7eb 1px, transparent 1px), 
                          linear-gradient(to bottom, #e5e7eb 1px, transparent 1px)`,
