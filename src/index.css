@@ -2,20 +2,6 @@
 @import "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
-/* Memaksa halaman selalu menggunakan tema terang */
-:root {
-  color-scheme: only light;
-}
-
-html, body, #root {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
-/* Opsional: Memperbaiki warna elemen lain agar sesuai */
-section, div, header, footer {
-  background-color: inherit;
-}
 
 
 body {
