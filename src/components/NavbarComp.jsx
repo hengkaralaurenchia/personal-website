@@ -1,0 +1,31 @@
+import { Navbar, NavbarBrand } from "flowbite-react";
+import { HiCheckBadge, HiMiniPhone, HiPhoneArrowUpRight } from "react-icons/hi2";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Button } from "flowbite-react";
+
+export default function Component() {
+  return (
+    <Navbar fluid rounded>
+      <NavbarBrand href="#">
+        <img src="/projects/logo.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
+        <span className="text-xs flex items-center gap-1 text-black">
+          hengkaralaurenchia@gmail.com
+          <HiCheckBadge className="text-blue-700" />
+        </span>
+      </NavbarBrand>
+        <div className="flex gap-3 text-xl justify-end">
+            <a href="https://github.com/hengkaralaurenchia" target="_blank">
+              <FaGithub className="cursor-pointer hover:scale-110 transition text-gray-900" />
+            </a>
+            <a href="https://www.instagram.com/laurnchia/" target="_blank">
+              <FaInstagram className="cursor-pointer hover:scale-110 transition text-pink-700" />
+            </a>
+            <a href="https://www.linkedin.com/in/hengkaralaurenchia" target="_blank">
+              <FaLinkedin className="cursor-pointer hover:scale-110 transition text-blue-800" />
+            </a>
+        </div>
+        {/* <p className="text-xs pb-3 text-[#779776] font-semibold"># Available to work</p> */}
+
+    </Navbar>
+  );
+}
