@@ -1,14 +1,13 @@
 import { Navbar, NavbarBrand } from "flowbite-react";
-import { HiCheckBadge, HiMiniPhone, HiPhoneArrowUpRight } from "react-icons/hi2";
+import { HiCheckBadge } from "react-icons/hi2";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Button } from "flowbite-react";
 
 export default function Component() {
   return (
     <Navbar 
       fluid 
       rounded 
-      className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300"
+      className="sticky top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-sm"
     >
       <NavbarBrand href="#">
         <img src="/projects/logo.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
